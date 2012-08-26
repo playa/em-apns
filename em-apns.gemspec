@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["lolcoltd@gmail.com"]
   gem.description   = %q{EventMachine-driven Apple Push Notifications Sender daemon}
   gem.summary       = %q{EventMachine-driven Apple Push Notifications Sender daemon}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/playa/em-apns"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
