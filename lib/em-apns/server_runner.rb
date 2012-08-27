@@ -24,6 +24,10 @@ module EM::APNS
           @pid_file = path
         end
 
+        opts.on('-r', '--root=PATH', 'Specifies the app root path.') do |path|
+          @options[:root] = path
+        end
+
         opts.on('-d', '--daemonize', 'Daemonize em-apnsender') do
           @daemonize = true
         end
