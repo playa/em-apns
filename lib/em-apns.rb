@@ -28,7 +28,7 @@ module EM::APNS
     end
     
     def send_notifications(notifications)
-      UNIXSocket.open(@sock) do |socket|
+      UNIXSocket.open(sock) do |socket|
         notifications.each do |n|
           socket.puts(n.data)
         end
